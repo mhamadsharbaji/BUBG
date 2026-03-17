@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUBG</title>
+    <!-- CSS stylesheets or links here -->
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+<body>
+
+<!-- Gaming Frame - Place it OUTSIDE any section, directly in body -->
+<div class="gaming-frame">
+    <!-- Corner decorations -->
+    <div class="frame-corner top-left"></div>
+    <div class="frame-corner top-right"></div>
+    <div class="frame-corner bottom-left"></div>
+    <div class="frame-corner bottom-right"></div>
+    
+    <!-- Edge lines -->
+    <div class="frame-edge top-edge"></div>
+    <div class="frame-edge bottom-edge"></div>
+    <div class="frame-edge left-edge"></div>
+    <div class="frame-edge right-edge"></div>
+    
+    <!-- Screw/rivet details -->
+    <div class="frame-screw screw-tl"></div>
+    <div class="frame-screw screw-tr"></div>
+    <div class="frame-screw screw-bl"></div>
+    <div class="frame-screw screw-br"></div>
+    
+    <!-- Additional gaming elements -->
+    <div class="frame-led led-1"></div>
+    <div class="frame-led led-2"></div>
+    <div class="frame-led led-3"></div>
+    <div class="frame-led led-4"></div>
+    
+    <!-- Circuit pattern -->
+    <div class="circuit-pattern"></div>
+    
+    <!-- HUD elements -->
+    <div class="hud-element hud-top-left">
+        <span class="hud-label">FPS</span>
+        <span class="hud-value">60</span>
+    </div>
+    <div class="hud-element hud-top-right">
+        <span class="hud-label">PING</span>
+        <span class="hud-value">24ms</span>
+    </div>
+    <div class="hud-element hud-bottom-left">
+        <span class="hud-label">AMMO</span>
+        <span class="hud-value">30/30</span>
+    </div>
+    <div class="hud-element hud-bottom-right">
+        <span class="hud-label">KILLS</span>
+        <span class="hud-value">7</span>
+    </div>
+    
+    <!-- Scanline effect -->
+    <div class="scanline"></div>
+</div>
+
+<section class="hero">
+    <img src="assets/PUBG-Mobile-logo.png" class="logo" alt="PUBG Logo">
+
+    <!-- Video container -->
+    <div class="video-container">
+        <video class="bg-video" autoplay muted loop playsinline>
+            <source src="assets/FpvDrone-compressed.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="center-text">LIFE EXPERIENCE</div>
+    <div class="second-text">WHERE THE GAME</div>
+    <div class="third-text">BECOMES REALITY</div>
+
+    <img src="assets/arrows.svg" class="scroll-arrow" alt="Scroll Down">
+</section>
+
+<section class="next-section">
+  <!-- Left side content -->
+  <div class="content-left">
+    <img src="assets/flying.png" class="scroll-image" alt="Section Image">
+    
+    <div class="cinematic-paragraph">
+      <p class="line1">A real world battleground where PUBG Mobile moves</p>
+      <p class="line2">beyond the screen and into reality, reimagined as a live</p>
+      <p class="line3">experience through multiple editions, stories, and</p>
+      <p class="line4">destinations filled with action, adrenaline, and</p>
+      <p class="line5">high impact gameplay.</p>
+    </div>
+  </div>
+  <div class="particle-container"></div>
+  
+<!-- Right side video with radar sentences -->
+<div class="video-right">
+  <div class="radar-container">
+    <!-- Radar sentences positioned around -->
+    <div class="radar-sentence top-left">Action-Packed Combat</div>
+    <div class="radar-sentence top-right">High-Stakes Showdowns</div>
+    <div class="radar-sentence middle-left">Adrenaline-Fueled Moments</div>
+    <div class="radar-sentence middle-right">Real-World Immersion</div>
+    <div class="radar-sentence bottom-left">Intense Survival Battles</div>
+    <div class="radar-sentence bottom-right">Ultimate Battle Experience</div>
+    
+    <!-- Radar video container -->
+    <div class="video-container">
+      <video class="section-video" autoplay muted loop playsinline>
+        <source src="assets/Radar.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      
+      <!-- Radar scan line effect (optional) -->
+      <div class="radar-scan"></div>
+    </div>
+  </div>
+</div>
+
+  
+  <!-- Particle container (covers both sides) -->
+  <div class="particle-container"></div>
+</section>
+
+
+<!-- ABOUT THE EXPERIENCE SECTION WITH FLOATING BACKGROUND IMAGES -->
+<section class="empty-black-section">
+  <!-- Floating Background Images - MAKE SURE THESE PATHS ARE CORRECT -->
+  <div class="floating-bg-images">
+    <img src="assets/aid-kit.png" class="floating-bg bg-1" alt="Floating Image 1">
+    <img src="assets/airdrop.png" class="floating-bg bg-2" alt="Floating Image 2">
+    <img src="assets/helmet.png" class="floating-bg bg-3" alt="Floating Image 3">
+    <img src="assets/helmet.png" class="floating-bg bg-4" alt="Floating Image 4">
+    <img src="assets/airdrop.png" class="floating-bg bg-5" alt="Floating Image 5">
+    <img src="assets/aid-kit.png" class="floating-bg bg-6" alt="Floating Image 6">
+  </div>
+
+  <div class="about-container">
+    <h2 class="about-header">ABOUT THE EXPERIENCE</h2>
+    <div class="about-paragraph">
+      <p class="about-line1">A real-world PUBG adventure transforming</p>
+      <p class="about-line2">digital battles into immersive, adrenaline</p>
+      <p class="about-line3">fueled live experiences</p>
+    </div>
+    
+    <!-- Dynamic Gaming Gallery with 5 Images -->
+    <div class="dynamic-gallery">
+      <!-- Image 1 - Large, top left -->
+      <div class="gallery-piece piece-1" data-id="1">
+        <div class="image-wrapper" data-text="DROP INTO THE BATTLEGROUND">
+          <img src="assets/1.svg" alt="Battle Royale" class="dynamic-image">
+        </div>
+      </div>
+      
+      <!-- Image 2 - Medium, top right -->
+      <div class="gallery-piece piece-2" data-id="2">
+        <div class="image-wrapper" data-text="SURVIVE, FIGHT, CONQUER">
+          <img src="assets/2.svg" alt="Tactical Gear" class="dynamic-image">
+        </div>
+      </div>
+      
+      <!-- Image 3 - Small, center left -->
+      <div class="gallery-piece piece-3" data-id="3">
+        <div class="image-wrapper" data-text="FROM SCREEN TO REALITY">
+          <img src="assets/3.svg" alt="Vehicle Combat" class="dynamic-image">
+        </div>
+      </div>
+      
+      <!-- Image 4 - Wide, bottom right -->
+      <div class="gallery-piece piece-4" data-id="4">
+        <div class="image-wrapper" data-text="WHERE LEGENDS ARE MADE">
+          <img src="assets/4.svg" alt="Squad Play" class="dynamic-image">
+        </div>
+      </div>
+      
+      
+      <!-- Decorative particles -->
+      <div class="gallery-particle p1"></div>
+      <div class="gallery-particle p2"></div>
+      <div class="gallery-particle p3"></div>
+      <div class="gallery-particle p4"></div>
+      <div class="gallery-particle p5"></div>
+    </div>
+  </div>
+  
+  <!-- Modal for zoomed images -->
+  <div class="image-modal" id="imageModal">
+    <span class="modal-close">&times;</span>
+    <div class="modal-content">
+      <img class="modal-image" id="modalImage" src="" alt="Zoomed Image">
+      <div class="modal-caption" id="modalCaption"></div>
+      <div class="modal-nav">
+        <button class="modal-prev">←</button>
+        <button class="modal-next">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTERACTIVE MAP SECTION -->
+<section class="map-section">
+  <div class="map-container">
+    <h2 class="map-title">BATTLE <span class="title-highlight">GROUNDS</span></h2>
+    <p class="map-subtitle">CLICK ON PINS TO EXPLORE LOCATIONS</p>
+    
+    <!-- Map Image Container -->
+    <div class="map-wrapper">
+      <!-- Base Map Image -->
+      <img src="assets/map.png" alt="Battle Map" class="map-image">
+      
+      <!-- Location Pins -->
+      <div class="map-pins">
+        <!-- Pin 1 - Pochinki (3 images) -->
+        <div class="pin-container" data-location="riyadh">
+          <div class="pin" style="top: 40%; left: 80%;">
+            <div class="pin-dot"></div>
+            <div class="pin-pulse"></div>
+            <span class="pin-label">RIYADH SEASON</span>
+          </div>
+          
+          <!-- Popup Image for Pin 1 -->
+          <div class="pin-popup" id="popup-riyadh">
+            <div class="popup-content">
+              <div class="popup-image-container">
+                <img src="assets/riyad-season.jpg" alt="RIYADH SEASON 1" class="popup-image active" data-index="0">
+                <img src="assets/riyad-season.jpg" alt="RIYADH SEASON 2" class="popup-image" data-index="1">
+                <img src="assets/riyad-season.jpg" alt="RIYADH SEASON 3" class="popup-image" data-index="2">
+                
+                <!-- Image navigation dots -->
+                <div class="image-nav">
+                  <span class="nav-dot active" data-img="0"></span>
+                  <span class="nav-dot" data-img="1"></span>
+                  <span class="nav-dot" data-img="2"></span>
+                </div>
+                
+                <!-- Location name and year at bottom -->
+                <div class="image-info">
+                  <span class="location-name">RIYADH SEASON</span>
+                  <span class="location-year">2025</span>
+                </div>
+              </div>
+              <button class="popup-close">×</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Pin 2 - School (3 images) -->
+        <div class="pin-container" data-location="qatar">
+          <div class="pin" style="top: 32%; left: 84%;">
+            <div class="pin-dot"></div>
+            <div class="pin-pulse"></div>
+            <span class="pin-label">QATAR TOY FESTIVAL</span>
+          </div>
+          
+          <!-- Popup Image for Pin 2 -->
+          <div class="pin-popup" id="popup-QATAR TOY FESTIVAL ">
+            <div class="popup-content">
+              <div class="popup-image-container">
+                <img src="assets/qatar-1.jpg" alt="qatar toy fes 1" class="popup-image active" data-index="0">
+                <img src="assets/qatar-2.jpg" alt="qatar toy fes 2" class="popup-image" data-index="1">
+                <img src="assets/qatar-1.jpg" alt="qatar toy fes 3" class="popup-image" data-index="2">
+                
+                <div class="image-nav">
+                  <span class="nav-dot active" data-img="0"></span>
+                  <span class="nav-dot" data-img="1"></span>
+                  <span class="nav-dot" data-img="2"></span>
+                </div>
+                
+                <div class="image-info">
+                  <span class="location-name">QATAR TOY FESTIVAL </span>
+                  <span class="location-year">2025</span>
+                </div>
+              </div>
+              <button class="popup-close">×</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Pin 3 - Military Base (3 images) -->
+        <div class="pin-container" data-location="jubail">
+          <div class="pin" style="top: 25%; left: 80%;">
+            <div class="pin-dot"></div>
+            <div class="pin-pulse"></div>
+            <span class="pin-label">JUBAIL</span>
+          </div>
+          
+          <!-- Popup Image for Pin 3 -->
+          <div class="pin-popup" id="jubail">
+            <div class="popup-content">
+              <div class="popup-image-container">
+                <img src="assets/jubail.jpg" alt="Jubail 1" class="popup-image active" data-index="0">
+                <img src="assets/jubail.jpg" alt="jubail 2" class="popup-image" data-index="1">
+                <img src="assets/jubail.jpg" alt="jubail 3" class="popup-image" data-index="2">
+                
+                <div class="image-nav">
+                  <span class="nav-dot active" data-img="0"></span>
+                  <span class="nav-dot" data-img="1"></span>
+                  <span class="nav-dot" data-img="2"></span>
+                </div>
+                
+                <div class="image-info">
+                  <span class="location-name">JUBAIL</span>
+                  <span class="location-year">2025</span>
+                </div>
+              </div>
+              <button class="popup-close">×</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Pin 4 - Mylta Power (3 images) -->
+        <div class="pin-container" data-location="boulevard">
+          <div class="pin" style="top: 35%; left: 70%;">
+            <div class="pin-dot"></div>
+            <div class="pin-pulse"></div>
+            <span class="pin-label">BOULEVARD</span>
+          </div>
+          
+          <!-- Popup Image for Pin 4 -->
+          <div class="pin-popup" id="popup-mylta">
+            <div class="popup-content">
+              <div class="popup-image-container">
+                <img src="assets/boulevard-1.jpg" alt="boulevard 1" class="popup-image active" data-index="0">
+                <img src="assets/boulevard-2.jpg" alt="boulevard 2" class="popup-image" data-index="1">
+                <img src="assets/boulevard-1.jpg" alt="boulevard 3" class="popup-image" data-index="2">
+                
+                <div class="image-nav">
+                  <span class="nav-dot active" data-img="0"></span>
+                  <span class="nav-dot" data-img="1"></span>
+                  <span class="nav-dot" data-img="2"></span>
+                </div>
+                
+                <div class="image-info">
+                  <span class="location-name">MYLTA POWER</span>
+                  <span class="location-year">2025</span>
+                </div>
+              </div>
+              <button class="popup-close">×</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <!-- Compass Overlay -->
+      <div class="map-compass">
+        <div class="compass-n">N</div>
+        <div class="compass-e">E</div>
+        <div class="compass-s">S</div>
+        <div class="compass-w">W</div>
+      </div>
+      
+      <!-- Map Grid Overlay -->
+      <div class="map-grid"></div>
+    </div>
+    
+    <!-- Location Quick Navigation -->
+    <div class="location-nav">
+      <button class="location-btn" data-location="riyadh">RIYADH SEASON</button>
+      <button class="location-btn" data-location="qatar">QATAR TOY FESTIVAL</button>
+      <button class="location-btn" data-location="jubail">JUBAIL</button>
+      <button class="location-btn" data-location="boulevard">BOULEVARD</button>
+    </div>
+  </div>
+</section>
+
+
+
+
+  
+  <!-- Get In Touch Section - Form Centered Over Image -->
+  <section class="getintouch-section">
+    <!-- Full-width background image container -->
+    <div class="fullwidth-bg">
+      <!-- Rotating background images -->
+      <img src="assets/intouch-1.jpg" alt="Background Image 1" class="bg-rotating-image active" id="bgImg1">
+      <img src="assets/intouch-2.jpg" alt="Background Image 2" class="bg-rotating-image" id="bgImg2">
+      <img src="assets/intouch-3.jpg" alt="Background Image 3" class="bg-rotating-image" id="bgImg3">
+      
+      <!-- Dark overlay for better form readability -->
+      <div class="bg-overlay"></div>
+    </div>
+    
+    <!-- Centered form container -->
+    <div class="centered-form-container">
+      <div class="form-content">
+        <h2 class="form-title">GET IN <span class="title-highlight">TOUCH</span></h2>
+        <p class="form-subtitle">READY TO JOIN THE BATTLEGROUND?</p>
+        
+        <form class="gaming-form" id="contactForm">
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="fullName" class="form-label">FULL NAME</label>
+            <input type="text" id="fullName" name="fullName" class="form-input" placeholder="ENTER YOUR FULL NAME" required>
+            <div class="input-glow"></div>
+          </div>
+          
+          <!-- Email Address -->
+          <div class="form-group">
+            <label for="email" class="form-label">EMAIL ADDRESS</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="PLAYER@EXAMPLE.COM" required>
+            <div class="input-glow"></div>
+          </div>
+          
+          <!-- Phone Number -->
+          <div class="form-group">
+            <label for="phone" class="form-label">PHONE NUMBER</label>
+            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+1 234 567 890" required>
+            <div class="input-glow"></div>
+          </div>
+          
+          <!-- Message -->
+          <div class="form-group full-width">
+            <label for="message" class="form-label">MESSAGE</label>
+            <textarea id="message" name="message" class="form-textarea" placeholder="TYPE YOUR MESSAGE HERE..." rows="4" required></textarea>
+            <div class="input-glow"></div>
+          </div>
+          
+          <!-- Send Now Button -->
+          <div class="form-button-container">
+            <button type="submit" class="send-now-btn">
+              <span class="btn-text">SEND NOW</span>
+              <span class="btn-icon">➔</span>
+              <div class="btn-glow"></div>
+            </button>
+            <div class="btn-status" id="formStatus"></div>
+          </div>
+        </form>
+        
+        <!-- Contact Info with gaming style -->
+        <div class="contact-info">
+          <div class="info-item">
+            <span class="info-icon">📞</span>
+            <span class="info-text">+1 800 555 0123</span>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">✉️</span>
+            <span class="info-text">CONTACT@PUBGEXPERIENCE.COM</span>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <span class="info-text">BATTLEGROUND HQ, LOS ANGELES</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- FOOTER SECTION -->
+<footer class="gaming-footer">
+  <div class="footer-container">
+    <!-- Left character -->
+    <div class="character-left">
+      <img src="assets/character-left.png" alt="Left Character" class="character-img character-left-img">
+      <div class="character-glow left-glow"></div>
+      <div class="character-effect left-effect"></div>
+    </div>
+    
+    <!-- Center content -->
+    <div class="footer-center">
+      <!-- 5 Logos in the center -->
+      <div class="footer-logos">
+        <div class="logo-item">
+          <img src="assets/Pubg-Logo.png" alt="Logo 1" class="footer-logo">
+        </div>
+        <div class="logo-item">
+          <img src="assets/level-infinite.png" alt="Logo 2" class="footer-logo">
+        </div>
+        <div class="logo-item">
+          <img src="assets/white-lightspeed.png" alt="Logo 3" class="footer-logo">
+        </div>
+        <div class="logo-item">
+          <img src="assets/white-krafton-logo.png" alt="Logo 4" class="footer-logo">
+        </div>
+        <div class="logo-item">
+          <img src="assets/ST-Logo.png" alt="Logo 5" class="footer-logo">
+        </div>
+      </div>
+      
+      <!-- Social Links -->
+      <div class="social-links">
+        <a href="#" class="social-link">
+          <span class="social-icon">𝕏</span>
+          <span class="social-name">X</span>
+        </a>
+        <a href="#" class="social-link">
+          <span class="social-icon">in</span>
+          <span class="social-name">LinkedIn</span>
+        </a>
+        <a href="#" class="social-link">
+          <span class="social-icon">f</span>
+          <span class="social-name">Facebook</span>
+        </a>
+        <a href="#" class="social-link">
+          <span class="social-icon">📷</span>
+          <span class="social-name">Instagram</span>
+        </a>
+      </div>
+      
+      <!-- Copyright -->
+      <div class="footer-copyright">
+        <p>© BUBG 2026. All rights reserved</p>
+      </div>
+    </div>
+    
+    <!-- Right character -->
+    <div class="character-right">
+      <img src="assets/character-right.png" alt="Right Character" class="character-img character-right-img">
+      <div class="character-glow right-glow"></div>
+      <div class="character-effect right-effect"></div>
+    </div>
+  </div>
+  
+  <!-- Battle line between characters -->
+  <div class="battle-line"></div>
+  
+  <!-- Footer bottom line -->
+  <div class="footer-bottom-line"></div>
+</footer>
+
+
+</body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    
+    <script src="script.js"></script>
+
+</html>
